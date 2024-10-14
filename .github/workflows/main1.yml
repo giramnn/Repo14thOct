@@ -1,7 +1,5 @@
 name: second_pipeline
 on: 
-  schedule:
-    - cron: '*/5 * * * *'
   pull_request: 
     branches:
       - main
