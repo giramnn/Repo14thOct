@@ -3,10 +3,6 @@ on:
   schedule:
     - cron: '*/5 * * * *' # every 5 mins
   workflow_dispatch:
-  
-concurrency:
-  group: schedule${{ github.event.inputs.date }}
-  cancel-in-progress: true
 
 jobs:
   schedule:
